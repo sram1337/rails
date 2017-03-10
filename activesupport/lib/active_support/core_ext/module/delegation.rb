@@ -165,7 +165,7 @@ class Module
       if prefix
         "#{prefix == true ? to : prefix}_"
       else
-        ""
+        "".freeze
       end
 
     location = caller_locations(1, 1).first
